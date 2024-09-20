@@ -33,6 +33,10 @@ p, h1, h2, h3, h4, h5, h6 {
   Custom Styling
 */
 
+:root {
+  --green: #596D48;
+}
+
 html, body {
   height: 100vh;
 }
@@ -43,7 +47,10 @@ html, body {
 }
 
 .image-sidebar {
-  background-color: black; /* Add temporary background color to see space occupied */
+  background-color: var(--green, green);
+  background-image: url("../images/green-leaf-plant-close-up.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   flex: 1;
 }
 
