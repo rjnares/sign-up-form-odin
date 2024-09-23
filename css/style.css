@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'norsebold';
+  src: url('../assets/fonts/norse-bold-webfont.woff2') format('woff2'),
+       url('../assets/fonts/norse-bold-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
 /*
   Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
@@ -51,7 +59,7 @@ html, body {
 .image-sidebar {
   position: relative;
   background-color: var(--green, green);
-  background-image: url("../images/green-leaf-plant-close-up.jpg");
+  background-image: url('../assets/images/green-leaf-plant-close-up.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -69,6 +77,7 @@ html, body {
   align-items: center;
   background-color: var(--black-transparent, black);
   top: 20%;
+  font-family: 'norsebold', system-ui, sans-serif;
 }
 
 .content {
