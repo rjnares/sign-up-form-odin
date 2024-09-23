@@ -35,6 +35,8 @@ p, h1, h2, h3, h4, h5, h6 {
 
 :root {
   --green: #596D48;
+  --white: #FFFFFF;
+  --black-transparent: rgba(0, 0, 0, 0.5);
 }
 
 html, body {
@@ -47,11 +49,26 @@ html, body {
 }
 
 .image-sidebar {
+  position: relative;
   background-color: var(--green, green);
   background-image: url("../images/green-leaf-plant-close-up.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top center;
   flex: 1;
+}
+
+.logo {
+  position: absolute;
+  color: var(--white, white);
+  text-transform: uppercase;
+  width: 100%;
+  font-size: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black-transparent, black);
+  top: 20%;
 }
 
 .content {
