@@ -43,6 +43,8 @@ p, h1, h2, h3, h4, h5, h6 {
 
 :root {
   --green: #596D48;
+  --light-white: #F9FAFB;
+  --light-gray: #CCCCCC;
   --white: #FFFFFF;
   --black-transparent: rgba(0, 0, 0, 0.5);
   font-family: system-ui, sans-serif;
@@ -106,10 +108,18 @@ html, body {
 
 .credit > a:hover,
 .credit > a:focus {
-  color: #ccc;
+  color: var(--light-gray, lightgray);
 }
 
 .content {
-  background-color: gray; /* Add temporary background color to see space occupied */
   flex: 2;
+  flex-direction: column;
+}
+
+.section:nth-child(odd) {
+  background-color: var(--light-white, whitesmoke);
+}
+
+.section {
+  flex: 1;
 }
