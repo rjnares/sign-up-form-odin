@@ -78,6 +78,17 @@ html, body {
   background-color: var(--black-transparent, black);
   top: 20%;
   font-family: 'norsebold', system-ui, sans-serif;
+  padding: 0.5rem 0;
+}
+
+.logo::before {
+  content: '';
+  background-image: url('../assets/images/odin-logo-lined.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+  width: 100px;
+  height: 8rem;
 }
 
 .content {
