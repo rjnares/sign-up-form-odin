@@ -45,6 +45,7 @@ p, h1, h2, h3, h4, h5, h6 {
   --green: #596D48;
   --white: #FFFFFF;
   --black-transparent: rgba(0, 0, 0, 0.5);
+  font-family: system-ui, sans-serif;
 }
 
 html, body {
@@ -89,6 +90,23 @@ html, body {
   background-size: contain;
   width: 100px;
   height: 8rem;
+}
+
+.credit {
+  position: absolute;
+  bottom: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--white, white);
+}
+
+.credit > a {
+  color: var(--white, white);
+}
+
+.credit > a:hover,
+.credit > a:focus {
+  color: #ccc;
 }
 
 .content {
