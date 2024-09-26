@@ -43,6 +43,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 :root {
   --green: #596D48;
+  --dark-gray: #2D2E2F;
   --light-white: #F9FAFB;
   --light-gray: #CCCCCC;
   --white: #FFFFFF;
@@ -122,4 +123,28 @@ html, body {
 
 .section {
   flex: 1;
+  padding-left: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.body-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: -1px;
+  word-spacing: 2px;
+  color: var(--dark-gray, black);
+}
+
+.emphasis {
+  font-style: italic;
+}
+
+.hook {
+  padding-bottom: 4rem;
+  justify-content: flex-end;
+}
+
+.hook .body-text:first-child {
+  margin-bottom: 1rem;
 }
