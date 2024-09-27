@@ -154,6 +154,8 @@ html, body {
 .form {
   padding-top: 1rem;
   padding-bottom: 1rem;
+  position: relative;
+  box-shadow: 0px 5px 10px 0 #CECECE;
 }
 
 #sign-up-form {
@@ -190,4 +192,29 @@ input:focus {
   border-color: transparent;
   outline: 1px solid var(--blue, steelblue);
   box-shadow: 4px 4px 5px 0px #CECECE;
+}
+
+.create-account {
+  padding-top: 2rem;
+  font-size: 1.2rem;
+}
+
+.create-account > button {
+  width: fit-content;
+  padding: 0.8rem 3.5rem;
+  color: var(--white, white);
+  background-color: var(--green, green);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px 0 #CECECE;
+  font-weight: 500;
+}
+
+.create-account > p {
+  margin-top: 2rem;
+}
+
+.create-account > p > span {
+  color: var(--green, green);
+  font-weight: 500;
 }
