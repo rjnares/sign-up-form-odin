@@ -32,34 +32,35 @@
         <p class="body-text">Let's do this!</p>
         <form id="sign-up-form">
           <div>
-            <p>
+            <div>
               <label for="first-name">FIRST NAME</label>
               <input id="first-name" type="text" name="first_name">
-            </p>
-            <p>
+            </div>
+            <div>
               <label for="last-name">LAST NAME</label>
               <input id="last-name" type="text" name="last_name">
-            </p>
+            </div>
           </div>
           <div>
-            <p>
+            <div>
               <label for="email">EMAIL</label>
               <input id="email" type="email" name="email">
-            </p>
-            <p>
+            </div>
+            <div>
               <label for="phone-number">PHONE NUMBER</label>
               <input id="phone-number" type="tel" name="phone_number">
-            </p>
+            </div>
           </div>
           <div>
-            <p>
+            <div>
               <label for="password">PASSWORD</label>
-              <input id="password" type="password" name="password">
-            </p>
-            <p>
+              <input id="password" type="password" name="password" minlength="8" required>
+              <p class="error">* Passwords must be 8 characters minimum</p>
+            </div>
+            <div>
               <label for="confirm-password">CONFIRM PASSWORD</label>
-              <input id="confirm-password" type="password" name="confirm_password">
-            </p>
+              <input id="confirm-password" type="password" name="confirm_password" minlength="8" required>
+            </div>
           </div>
         </form>
       </div>

@@ -48,6 +48,7 @@ p, h1, h2, h3, h4, h5, h6 {
   --light-white: #F9FAFB;
   --light-gray: #CCCCCC;
   --white: #FFFFFF;
+  --red: #C80000;
   --black-transparent: rgba(0, 0, 0, 0.5);
   --input-border-color: #E5E7EB;
   font-family: system-ui, sans-serif;
@@ -170,9 +171,14 @@ html, body {
   gap: 4.5rem;
 }
 
-#sign-up-form > div > p {
+#sign-up-form > div > div {
   display: flex;
   flex-direction: column;
+}
+
+.error {
+  color: var(--red, red);
+  font-size: 0.8rem;
 }
 
 label {
@@ -186,6 +192,10 @@ input {
   line-height: 1.8;
   padding-left: 0.6rem;
   border: 1px solid var(--input-border-color, lightgray);
+}
+
+input:invalid {
+  border-color: var(--red, red);
 }
 
 input:focus {
