@@ -43,11 +43,13 @@ p, h1, h2, h3, h4, h5, h6 {
 
 :root {
   --green: #596D48;
+  --blue: #1E5CD9;
   --dark-gray: #2D2E2F;
   --light-white: #F9FAFB;
   --light-gray: #CCCCCC;
   --white: #FFFFFF;
   --black-transparent: rgba(0, 0, 0, 0.5);
+  --input-border-color: #E5E7EB;
   font-family: system-ui, sans-serif;
 }
 
@@ -147,4 +149,45 @@ html, body {
 
 .hook .body-text:first-child {
   margin-bottom: 1rem;
+}
+
+.form {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#sign-up-form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-evenly;
+}
+
+#sign-up-form > div {
+  display: flex;
+  gap: 4.5rem;
+}
+
+#sign-up-form > div > p {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+
+input {
+  border-radius: 4px;
+  line-height: 1.8;
+  padding-left: 0.6rem;
+  border: 1px solid var(--input-border-color, lightgray);
+}
+
+input:focus {
+  border-color: transparent;
+  outline: 1px solid var(--blue, steelblue);
+  box-shadow: 4px 4px 5px 0px #CECECE;
 }
